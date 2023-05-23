@@ -1,0 +1,111 @@
+mvideo@LAPTOP-8VOUL1G7 MINGW64 ~/Desktop/bash    
+$ pwd
+/c/Users/mvideo/Desktop/bash
+
+mvideo@LAPTOP-8VOUL1G7 MINGW64 ~/Desktop/bash    
+$ mkdir test1
+
+mvideo@LAPTOP-8VOUL1G7 MINGW64 ~/Desktop/bash    
+$ cd test1
+
+4. mvideo@LAPTOP-8VOUL1G7 MINGW64 ~/Desktop/bash/test1
+$ touch 1.txt
+                                                 
+mvideo@LAPTOP-8VOUL1G7 MINGW64 ~/Desktop/bash/test1
+$ touch 2.txt                                    
+
+mvideo@LAPTOP-8VOUL1G7 MINGW64 ~/Desktop/bash/test1                                               
+$ touch 3.txt
+
+mvideo@LAPTOP-8VOUL1G7 MINGW64 ~/Desktop/bash/test1                                               
+$ ls
+1.txt  2.txt  3.txt
+
+mvideo@LAPTOP-8VOUL1G7 MINGW64 ~/Desktop/bash/test1
+$ cd ..
+
+mvideo@LAPTOP-8VOUL1G7 MINGW64 ~/Desktop/bash
+$ mkdir test2
+
+mvideo@LAPTOP-8VOUL1G7 MINGW64 ~/Desktop/bash    
+$ rmdir test2
+
+mvideo@LAPTOP-8VOUL1G7 MINGW64 ~/Desktop/bash    
+$ cd test1
+
+mvideo@LAPTOP-8VOUL1G7 MINGW64 ~/Desktop/bash/test1
+$ rm 2.txt
+
+mvideo@LAPTOP-8VOUL1G7 MINGW64 ~/Desktop/bash/test1
+$ cd ..
+
+mvideo@LAPTOP-8VOUL1G7 MINGW64 ~/Desktop/bash    
+$ mkdir test3
+
+mvideo@LAPTOP-8VOUL1G7 MINGW64 ~/Desktop/bash
+$ cd test3
+
+mvideo@LAPTOP-8VOUL1G7 MINGW64 ~/Desktop/bash/test3
+$ touch file1
+
+mvideo@LAPTOP-8VOUL1G7 MINGW64 ~/Desktop/bash/test3
+$ touch file2 
+
+mvideo@LAPTOP-8VOUL1G7 MINGW64 ~/Desktop/bash    
+$ rm -rf test3
+
+mvideo@LAPTOP-8VOUL1G7 MINGW64 ~/Desktop/bash    
+$ mkdir test4
+
+mvideo@LAPTOP-8VOUL1G7 MINGW64 ~/Desktop/bash    
+$ mv test1/1.txt test4
+
+mvideo@LAPTOP-8VOUL1G7 MINGW64 ~/Desktop/bash
+$ mv test1/3.txt test4
+
+mvideo@LAPTOP-8VOUL1G7 MINGW64 ~/Desktop/bash
+$ echo line > 1.txt
+
+mvideo@LAPTOP-8VOUL1G7 MINGW64 ~/Desktop/bash
+$ echo line >> 1.txt
+
+mvideo@LAPTOP-8VOUL1G7 MINGW64 ~/Desktop/bash
+$ echo line >> 1.txt
+
+mvideo@LAPTOP-8VOUL1G7 MINGW64 ~/Desktop/bash
+$ cat 1.txt
+line
+line
+line
+
+mvideo@LAPTOP-8VOUL1G7 MINGW64 ~/Desktop/bash    
+$ echo line > 3.txt
+
+mvideo@LAPTOP-8VOUL1G7 MINGW64 ~/Desktop/bash    
+$ echo line >> 3.txt
+
+mvideo@LAPTOP-8VOUL1G7 MINGW64 ~/Desktop/bash    
+$ echo line >> 3.txt
+
+mvideo@LAPTOP-8VOUL1G7 MINGW64 ~/Desktop/bash    
+$ cat 1.txt 3.txt
+line
+line
+line
+line
+line
+line
+
+
+nano 1.txt
+^\ Replace
+
+ GNU nano 7.2             1.txt                 Modified  
+row
+row
+row
+
+
+
+
+

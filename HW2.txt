@@ -1,0 +1,160 @@
+mvideo@LAPTOP-8VOUL1G7 MINGW64 ~/Desktop/bash
+$ mkdir test3
+
+mvideo@LAPTOP-8VOUL1G7 MINGW64 ~/Desktop/bash
+$ cd test3
+
+mvideo@LAPTOP-8VOUL1G7 MINGW64 ~/Desktop/bash/test3
+$ touch 4
+
+mvideo@LAPTOP-8VOUL1G7 MINGW64 ~/Desktop/bash/test3
+$ touch 5
+
+mvideo@LAPTOP-8VOUL1G7 MINGW64 ~/Desktop/bash/test3
+$ touch 6
+
+mvideo@LAPTOP-8VOUL1G7 MINGW64 ~/Desktop/bash/test3
+$ echo row1 >> 4
+
+mvideo@LAPTOP-8VOUL1G7 MINGW64 ~/Desktop/bash/test3
+$ echo row2 >> 4
+
+mvideo@LAPTOP-8VOUL1G7 MINGW64 ~/Desktop/bash/test3
+$ echo row3 >> 4
+
+mvideo@LAPTOP-8VOUL1G7 MINGW64 ~/Desktop/bash/test3
+$ echo row4 >> 4
+
+mvideo@LAPTOP-8VOUL1G7 MINGW64 ~/Desktop/bash/test3
+$ echo row1 >> 5
+
+mvideo@LAPTOP-8VOUL1G7 MINGW64 ~/Desktop/bash/test3
+$ echo row2 >> 5
+
+mvideo@LAPTOP-8VOUL1G7 MINGW64 ~/Desktop/bash/test3
+$ echo row3 >> 5
+
+mvideo@LAPTOP-8VOUL1G7 MINGW64 ~/Desktop/bash/test3
+$ echo row4 >> 5
+
+mvideo@LAPTOP-8VOUL1G7 MINGW64 ~/Desktop/bash/test3
+$ echo row1 >> 6
+
+mvideo@LAPTOP-8VOUL1G7 MINGW64 ~/Desktop/bash/test3
+$ echo row2 >> 6
+
+mvideo@LAPTOP-8VOUL1G7 MINGW64 ~/Desktop/bash/test3
+$ echo row3 >> 6
+
+mvideo@LAPTOP-8VOUL1G7 MINGW64 ~/Desktop/bash/test3
+$ echo row4 >> 6
+
+mvideo@LAPTOP-8VOUL1G7 MINGW64 ~/Desktop/bash/test3t3
+$ grep -i "row2" 5
+row2
+
+mvideo@LAPTOP-8VOUL1G7 MINGW64 ~/Desktop/bash/test3
+$ grep -R "row"
+4:row1
+4:row2
+4:row3
+4:row4
+5:row1
+5:row2
+5:row3
+5:row4
+6:row1
+6:row2
+6:row3
+6:row4
+
+mvideo@LAPTOP-8VOUL1G7 MINGW64 ~/Desktop/bash/test3
+$ grep -c "row" 6
+4 
+
+mvideo@LAPTOP-8VOUL1G7 MINGW64 ~/Desktop/bash/test3
+$ find . -name "5"
+./5
+
+mvideo@LAPTOP-8VOUL1G7 MINGW64 ~/Desktop/bash/test3
+$ find . -name "5" -delete
+
+mvideo@LAPTOP-8VOUL1G7 MINGW64 ~/Desktop/bash/test3
+$ echo test >> 4
+
+mvideo@LAPTOP-8VOUL1G7 MINGW64 ~/Desktop/bash/test3
+$ sed 's/test/fail/g' 4 -i
+
+mvideo@LAPTOP-8VOUL1G7 MINGW64 ~/Desktop/bash/test3
+$ echo test >> 4
+
+mvideo@LAPTOP-8VOUL1G7 MINGW64 ~/Desktop/bash/test3
+$ ps aux
+      PID    PPID    PGID     WINPID   TTY       
+  UID    STIME COMMAND
+     1559    1418    1559       9424  cons0     197610 17:19:25 /usr/bin/ps
+     1418       1    1418      10608  cons0     197610 16:56:42 /usr/bin/bash
+
+
+mvideo@LAPTOP-8VOUL1G7 MINGW64 ~/Desktop/bash/test3
+$ kill 666
+bash: kill: (666) - No such process
+
+
+mvideo@LAPTOP-8VOUL1G7 MINGW64 ~/Desktop/bash/test3
+$ ping artsiomrusau.com
+
+Обмен пакетами с artsiomrusau.com [185.215.4.92] с 32 байтами данных:
+Превышен интервал ожидания для запроса.
+Превышен интервал ожидания для запроса.
+Превышен интервал ожидания для запроса.
+Превышен интервал ожидания для запроса.
+
+Статистика Ping для 185.215.4.92:
+    Пакетов: отправлено = 4, получено = 0, потеряно = 4
+    (100% потерь)
+
+
+
+
+mvideo@LAPTOP-8VOUL1G7 MINGW64 ~/Desktop/bash
+$ ping -c 5 artsiomrusau.com
+
+Обмен пакетами с artsiomrusau.com [185.215.4.92] с 32 байтами данных:
+Превышен интервал ожидания для запроса.
+Превышен интервал ожидания для запроса.
+Превышен интервал ожидания для запроса.
+Превышен интервал ожидания для запроса.
+Превышен интервал ожидания для запроса.
+
+Статистика Ping для 185.215.4.92:
+    Пакетов: отправлено = 5, получено = 0, потеряно = 5
+    (100% потерь)
+
+
+
+mvideo@LAPTOP-8VOUL1G7 MINGW64 ~/Desktop/bash/test3
+$  curl https://petstore.swagger.io/v2/pet/findByStatus?status=pending
+[{"id":9223372036854603043,"category":{"id":288962587,"name":"Pixie-bob"},"name":"Milo","photoUrls":["http://lorempixel.com/1366/768/sports/"],"tags":[{"id":-1767847124,"name":"swan"}],"status":"pending"},{"id":9727313,"category":{"id":26989837,"name":"incididunt est non"},"name":"doggy","photoUrls":["dolor veniam","eiusmod dolore in aliqua"],"tags":[{"id":-90210856,"name":"sit sint"},{"id":-88981588,"name":"non velit anim sint"}],"status":"pending"},{"id":12345,"category":{"id":0,"name":"Tuto-Karate2"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"pending"}]
+
+
+mvideo@LAPTOP-8VOUL1G7 MINGW64 ~/Desktop/bash/test3
+$ curl -d '{"id":231, "username":"Arn"}' -H "Content-Type: application/json" -X POST https://petstore.swagger.io/v2/user
+{"code":200,"type":"unknown","message":"231"}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
